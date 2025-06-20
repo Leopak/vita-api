@@ -39,11 +39,7 @@ export default async function handler(req, res) {
 
   const context = matchChunks(message || "");
 
-  const prompt = `Sei ViTA, assistente vocale turistico di Coastrider. Rispondi in modo gentile, utile e conciso, basandoti su queste informazioni:
-
-${context}
-
-Domanda: ${message}`;
+  const prompt = `Sei ViTA, assistente vocale turistico di Coastrider. Rispondi in modo gentile, utile e conciso, basandoti su queste informazioni:\n\n${context}\n\nDomanda: ${message}`;
 
   const completion = await openai.chat.completions.create({
     model: "gpt-3.5-turbo",
