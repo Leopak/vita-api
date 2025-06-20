@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "rootDirectory": "vita-api",
   "functions": {
     "api/ask.js": {
       "runtime": "nodejs18.x"
