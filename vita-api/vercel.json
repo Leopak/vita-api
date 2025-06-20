@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "rootDirectory": "vita-api",
-  "functions": {
-    "api/ask.js": {
-      "runtime": "edge"
-    }
-  }
-}
